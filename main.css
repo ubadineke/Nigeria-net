@@ -5,6 +5,9 @@ body {
   font-size: 1em;
   line-height: 1.5;
   background-color: #ecf0f1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 ul,
@@ -241,6 +244,7 @@ footer {
 
 footer p {
   text-align: center;
+  margin-top: auto;
 }
 
 #countdown {
@@ -248,4 +252,101 @@ footer p {
   font-weight: bold;
   color: white;
   margin-bottom: 20px;
+}
+
+/* vENUE pAGE */
+.card-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-1 > img {
+  aspect-ratio: 1/1;
+  width: 6.1rem;
+}
+
+.card-1 > p {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.card-1 > span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  display: inline-block;
+  transform: rotate(270deg) translateY(-28px);
+}
+
+.card-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card-2 > img {
+  aspect-ratio: 1/1;
+  width: 6.1rem;
+}
+
+.card-2 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 8px;
+}
+
+.card-2 > div > span:nth-child(1) {
+  font-weight: 900;
+  font-size: 3.5rem;
+  transform: translateY(8px);
+}
+
+.card-2 > div > span:nth-child(2) {
+  transform: translateY(-16px);
+}
+.card-2 > span {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.card-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card-3 > img {
+  aspect-ratio: 1/1;
+  width: 6.1rem;
+}
+
+.card-3 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 8px;
+}
+
+.card-3 > p {
+  font-size: 3rem;
+  font-weight: 900;
+  width: 15ch;
+  line-height: 0.9;
+}
+
+.main-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  width: 80%;
 }
