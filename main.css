@@ -196,7 +196,7 @@ header a:hover {
 --
 --
 --
---
+--linear-gradient(rgba(0, 132, 61, 0.9), rgba(0, 132, 61, 0.9))
 ----
 -- */
 
@@ -344,9 +344,92 @@ footer p {
 }
 
 .main-card {
+  /* margin: 0;
+  padding: 0; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-inline: auto;
   width: 80%;
+}
+
+/* venue page */
+.venue-container {
+  max-width: 1200px;
+  margin: -3rem auto 4rem;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.venue-info-card {
+  background: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.venue-details h2,
+.venue-amenities h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.venue-map {
+  background: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.venue-map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.page-container {
+  margin-top: 80px;
+  min-height: calc(100vh - 80px - 100px);
+}
+
+.page-hero {
+  background: #2c3e50;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.page-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.mid-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+#map-title {
+  text-align: center;
+}
+
+#detail {
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  color: #d34500;
+}
+
+.register-form {
+  margin-bottom: 210px;
 }
